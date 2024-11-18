@@ -16,31 +16,35 @@ Follow these steps to set up the project:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/sai-prasanth-k/file_sharing_system.git
+    git clone https://github.com/Suchindrajendran/file_sharing_system.git
     cd file_sharing_system
     ```
+2. Check Python and pip version
+   ```python --version
+      pip version 
+    ```
 
-2. **Install pipenv** (if not already installed):
+3. **Install pipenv** (if not already installed):
     ```bash
     pip install pipenv
     ```
 
-3. **Install dependencies**:
+4. **Install dependencies**:
     ```bash
     pipenv install
     ```
 
-4. **Start a new Django project**:
+5. **Start a new Django project**:
     ```bash
     pipenv run django-admin startproject secure_file_sharing .
     ```
 
-5. **Create a new Django app**:
+6. **Create a new Django app**:
     ```bash
     pipenv run python manage.py startapp filesharing
     ```
 
-6. **Configure the database** in `file_sharing_system/settings.py`:
+7. **Configure the database** in `file_sharing_system/settings.py`:
     ```python
     DATABASES = {
         'default': {
@@ -50,7 +54,7 @@ Follow these steps to set up the project:
     }
     ```
 
-7. **Apply migrations**:
+8. **Apply migrations**:
     ```bash
     pipenv run python manage.py makemigrations
     pipenv run python manage.py migrate
@@ -62,3 +66,6 @@ To run the development server:
 
 ```bash
 pipenv run python manage.py runserver
+
+## To change the port
+```python manage.py runserver 8001 
